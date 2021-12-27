@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  /*Primary*/
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  /*Accent*/
+  --blue: hsl(248, 32%, 49%);
+  /*Neutral*/
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: var(--red);
+  background-image: url("../images/bg-intro-mobile.png");
+  background-repeat: repeat;
+  padding: 2rem;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1280px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  gap: 4rem;
+}
+
+body .container .left-col {
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+body .container .right-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+body .container .right-col .card-try {
+  background: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 3rem;
+  border-radius: 10px;
+  font-weight: 700;
+  -webkit-box-shadow: 0 8px rgba(62, 60, 73, 0.25);
+          box-shadow: 0 8px rgba(62, 60, 73, 0.25);
+}
+
+body .container .right-col .card-try span {
+  font-weight: 400;
+}
+
+body .container .right-col .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  gap: 1rem;
+  -webkit-box-shadow: 0 8px rgba(62, 60, 73, 0.25);
+          box-shadow: 0 8px rgba(62, 60, 73, 0.25);
+}
+
+body .container .right-col .card input {
+  padding: 1rem;
+  color: var(--dark-blue);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  outline: solid 0.1rem var(--grayish-blue);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+body .container .right-col .card input::-webkit-input-placeholder {
+  font-weight: 700;
+}
+
+body .container .right-col .card input:-ms-input-placeholder {
+  font-weight: 700;
+}
+
+body .container .right-col .card input::-ms-input-placeholder {
+  font-weight: 700;
+}
+
+body .container .right-col .card input::placeholder {
+  font-weight: 700;
+}
+
+body .container .right-col .card .active-input input {
+  outline: solid 0.2rem var(--red);
+  background-image: url("../images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: 92.5% 50%;
+  margin-bottom: .2rem;
+}
+
+body .container .right-col .card .active-input .active-error {
+  display: block;
+  font-size: .6rem;
+  color: var(--red);
+  text-align: right;
+  font-style: italic;
+}
+
+body .container .right-col .card .error {
+  display: none;
+}
+
+body .container .right-col .card .cta-free-trial {
+  padding: 1rem;
+  background: var(--green);
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px #2ea873;
+          box-shadow: 0 4px #2ea873;
+}
+
+body .container .right-col .card .cta-free-trial:hover {
+  background: #69d8a8;
+  cursor: pointer;
+}
+
+body .container .right-col .card .aggreements {
+  text-align: center;
+  font-size: .6rem;
+  color: var(--grayish-blue);
+  padding: 0 2.5rem;
+}
+
+body .container .right-col .card .aggreements a {
+  text-decoration: none;
+  color: var(--red);
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 400px) {
+  body {
+    background-image: url("../images/bg-intro-desktop.png");
+    background-repeat: repeat;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  body {
+    background-image: url("../images/bg-intro-desktop.png");
+    background-repeat: repeat;
+    padding: 2rem 10rem;
+  }
+  body .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 5rem;
+  }
+  body .container .left-col {
+    text-align: left;
+    width: 100%;
+  }
+  body .container .left-col h1 {
+    font-size: 3rem;
+  }
+  body .container .right-col {
+    width: 100%;
+  }
+  body .container .right-col .card {
+    padding: 2rem;
+  }
+  body .container .right-col .card div input {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+
+  <main>
+    <div class="container">
+
+      <section class="left-col">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable.
+        </p>
+      </section>
+      
+      <section class="right-col">
+        <p class="card-try">
+          Try it free 7 days <span>then $20/mo. thereafter</span>
+        </p>
+
+        <div class="card">
+          <div class="input-first-name">
+            <input type="text" placeholder="First Name" id="input-first-name">
+            <p class="error" id="error-first-name">First Name cannot be empty</p>
+          </div>
+          <div class="input-last-name">
+            <input type="text" placeholder="Last Name" id="input-last-name">
+            <p class="error" id="error-last-name">Last Name cannot be empty</p>
+          </div>
+          <div class="input-email">
+            <input type="email" placeholder="Email Address" id="input-email">
+            <p class="error" id="error-email">Looks like this is not an email</p>
+          </div>
+          <div class="input-password">
+            <input type="password" placeholder="Password" id="input-password">
+            <p class="error" id="error-password">Password cannot be empty</p>
+          </div>
+          
+          <button class="cta-free-trial" id="cta-free-trial">Claim your free trial</button>
+          
+          <p class="aggreements">
+          By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
+          </p>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
